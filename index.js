@@ -8,7 +8,7 @@ const app_version = process.env.APP_VERSION || "unknown";
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
 
-const msg = `Hello Word! Application version ${app_version} - Host ${app_host}\n`
+const msg = `Hello World! Application version ${app_version} - Hostname ${app_host}\n`
   res.end(msg);
 });
 
